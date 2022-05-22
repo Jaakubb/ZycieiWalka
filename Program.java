@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Program {
     public static void main(String[] args) {
-        Człowiek a = new Człowiek();
+
         Random liczba = new Random();
 
         Scanner input = new Scanner(System.in);
