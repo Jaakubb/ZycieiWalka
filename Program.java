@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Program {
     public static void main(String[] args) {
-        ;
+        Człowiek a = new Człowiek();
         Random liczba = new Random();
 
         Scanner input = new Scanner(System.in);
@@ -11,7 +11,7 @@ public class Program {
         String dzialanie = "1";
         //warunek pętli while jeśli jest true to ta pętla zawsze się wykonuje chyba że natrafi na break;
         while (true){
-            //Pytamy o dzialanie
+
             System.out.println("Wyjscie(x),Walka(f),Leczenie(h),Statystyki(s)");
             dzialanie = input.next();
             //Przerwanie aplikacji jesli x
@@ -19,18 +19,20 @@ public class Program {
                 break;
             }
             //Pytamy o liczby
+            int obrazenia = 1 + liczba.nextInt(99);
 
             //Wykonywanie działań za pomocą switcha
             switch(dzialanie){
                 case "f":
-                    obrazenia = liczba.nextInt(101);
                     System.out.println(obrazenia);
+                    System.out.println();
+
                     break;
                 case "h":
-                    System.out.println;
+                    //System.out.println;
                     break;
                 case "s":
-                    System.out.println;
+                    System.out.println();
                     break;
                 default:
                     break;
