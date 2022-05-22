@@ -6,7 +6,7 @@ public class Człowiek {
     Człowiek(){
         zdrowie=200;
         leczenie=100;
-        doswiadczenie=10;
+        doswiadczenie=0;
     }
 
 }
