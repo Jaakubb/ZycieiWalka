@@ -23,6 +23,13 @@ public class Program {
 
             System.out.println(b );
 
+            if (b.zdrowie<0){
+                System.out.println("Przegrałeś");
+                System.out.println("Suma doświadczenia:" + b.doswiadczenie);
+
+                break;
+            }
+
             if(dzialanie.equals("x")){
                 break;
             }
@@ -32,23 +39,20 @@ public class Program {
 
             switch(dzialanie){
                 case "f":
-                    System.out.println(obrazenia);
+                    System.out.println("Zadane obrażenia:" + obrazenia);
                     b.utrata_zdrowia(obrazenia);
-                    System.out.println(b.zdrowie);
+                    System.out.println("Aktualne zdrowie:" + b.zdrowie);
                     b.dodanie_exp(10);
 
-                    if (b.zdrowie<0){
-                        System.out.println("Przegrałeś");
-                        break;
-                    }
+
                     break;
                 case "h":
                     b.leczenie_zdrowia(b.leczenie);
-                    System.out.println(b.zdrowie);
+                    System.out.println("Aktualne zdrowie" + b.zdrowie);
                     break;
                 case "s":
-                    System.out.println(b.zdrowie);
-                    System.out.println(b.doswiadczenie);
+                    System.out.println("Zdrowie:" + b.zdrowie);
+                    System.out.println("Doświadczenie:" + b.doswiadczenie);
                     break;
                 default:
                     break;
